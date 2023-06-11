@@ -1,0 +1,96 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 445px;
+	height: 445px;
+	background-color: #090909;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: solid 2px black;
+	border-radius: 50%;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+  position:relative;
+
+
+}
+
+.container::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	   background: rgb(187,187,187);
+background: radial-gradient(circle, rgba(187,187,187,1) 50%, rgba(238,238,238,1) 100%); 
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: solid 10px #090909;
+	border-radius: 50%;
+	z-index: 999;
+}
+
+.btn {
+	margin: 6px;
+	display: inline-block;
+	height: 175px;
+	width: 175px;
+	border: 1px solid #000;
+	/* border-radius: 10%; */
+	opacity: 1;
+	z-index: 1;
+	position: relative;
+	opacity: 0.5;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+  border-top-right-radius:100%;
+}
+
+.green {
+	background-color: green;
+	border-top-left-radius: 100%;
+}
+
+.blue {
+  background-color: blue;
+  border-bottom-right-radius:100%;
+}
+
+.yellow {
+  background-color: yellow;
+  border-bottom-left-radius:100%;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  opacity:1;
+  transition:opacity 200ms linear;
+}
